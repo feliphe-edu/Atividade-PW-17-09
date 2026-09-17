@@ -1,0 +1,323 @@
+/*==================================================
+            REVEAL
+==================================================*/
+
+.reveal{
+
+opacity: 50;;
+
+transform:translateY(100px);
+
+transition:5s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+/*==================================================
+            LEFT
+==================================================*/
+
+.reveal-left{
+
+opacity:0;
+
+transform:translateX(-120px);
+
+transition:1s;
+
+}
+
+.reveal-left.active-left{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+
+
+/*==================================================
+            RIGHT
+==================================================*/
+
+.reveal-right{
+
+opacity:0;
+
+transform:translateX(120px);
+
+transition:1s;
+
+}
+
+.reveal-right.active-right{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+
+
+/*==================================================
+            ZOOM
+==================================================*/
+
+.zoom{
+
+opacity:0;
+
+transform:scale(.8);
+
+transition:1s;
+
+}
+
+.zoom.zoom-active{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+/*==================================================
+            DARK MODE
+==================================================*/
+
+.dark-mode{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+
+
+/* Navbar */
+
+.dark-mode .navbar{
+
+    background:#000 !important;
+
+}
+
+
+
+/* Cards */
+
+.dark-mode .card{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+
+
+/* Seções Claras */
+
+.dark-mode .bg-light{
+
+    background:#181818 !important;
+
+}
+
+
+
+/* Rodapé */
+
+.dark-mode footer{
+
+    background:#000 !important;
+
+}
+
+
+
+/* Formulários */
+
+.dark-mode input,
+
+.dark-mode textarea{
+
+    background:#252525;
+
+    color:white;
+
+    border:1px solid #555;
+
+}
+
+
+
+/* Placeholder */
+
+.dark-mode input::placeholder,
+
+.dark-mode textarea::placeholder{
+
+    color:#bbbbbb;
+
+}
+
+
+
+/* Accordion */
+
+.dark-mode .accordion-item{
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+
+.dark-mode .accordion-button{
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+
+.dark-mode .accordion-button:not(.collapsed){
+
+    background:#333;
+
+}
+
+
+
+/* List Group */
+
+.dark-mode .list-group-item{
+
+    background:#202020;
+
+    color:white;
+
+}
+
+
+
+/* Botão */
+
+#btnDarkMode{
+
+    transition:.3s;
+
+}
+
+
+
+#btnDarkMode:hover{
+
+    transform:rotate(180deg);
+
+}
+
+/*==================================================
+            LOADER
+==================================================*/
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999999;
+
+transition:.6s;
+
+}
+
+
+
+.loader-hide{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+
+
+/*==================================================
+            TOAST
+==================================================*/
+
+.toast-personalizado{
+
+position:fixed;
+
+top:30px;
+
+right:-400px;
+
+padding:18px;
+
+background:#198754;
+
+color:white;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+transition:.5s;
+
+z-index:999999;
+
+max-width:320px;
+
+}
+
+
+
+.toast-personalizado.mostrar{
+
+right:30px;
+
+}
+
+
+
+.toast-personalizado.erro{
+
+background:#dc3545;
+
+}
